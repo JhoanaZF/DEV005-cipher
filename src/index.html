@@ -2,13 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Caesar Cipher</title>
+    <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world! ssaasgsa</h1>
-    </div>
+    <main>
+      <section class="banner-one" id="banner-two">
+        <article class="contenido">
+          <h1 class="text-one titulo">Bienvenida</h1>
+          <p class="text-two">A Cifrado Cesar</p>
+          <h2 class="text-three">Cifra y Descifra tus mensajes</h2>
+          <br />
+          <p class="text-four">Ingrese Nº de desplazamientos</p>
+          <form action="">
+            <input
+              class="desplazamiento"
+              type="number"
+              id="desplazamiento"
+              required
+            />
+          </form>
+          <p class="text-four">Ingrese su mensaje a Cifrar o Descifrar</p>
+          <textarea
+            class="mensaje"
+            placeholder="Ingrese su mensaje..."
+            id="mensaje"
+            cols="30"
+            rows="10"
+            type="text"
+            required
+          ></textarea>
+          <br />
+          <div class="botonesCD">
+            <button type="button" class="boton" id="cifrar">Cifrar</button>
+            <button type="button" class="boton" id="descifrar">
+              Descifrar
+            </button>
+          </div>
+
+          <br />
+          <textarea
+            class="mensaje"
+            placeholder="Su mensaje..."
+            id="mensaje"
+            cols="30"
+            rows="10"
+            type="text"
+            required
+          ></textarea>
+          <br />
+          <button type="button" class="boton" id="botonFinal">Limpiar</button>
+        </article>
+      </section>
+      <!-- <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div> -->
+    </main>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

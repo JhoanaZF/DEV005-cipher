@@ -1,3 +1,33 @@
-import cipher from './cipher.js';
+import cipher from "./cipher.js";
 
-console.log(cipher);
+// const botonlInicio = document.querySelector("#botonInicio");
+// const botonFinal = document.querySelector("#botonFinal");
+
+// const vistaPrincipaInicio = document.querySelector("#banner-one");
+// const vistaPrincipaFinal = document.querySelector("#banner-two");
+
+// function cambiarDeVista(vista) {
+//   if (vista === "banner-one") {
+//     vistaPrincipaInicio.style.display = "block";
+//     vistaPrincipaFinal.style.display = "none";
+//   }
+//   else if (vista === "banner-two") {
+//     vistaPrincipaInicio.style.display = "none";
+//     vistaPrincipaFinal.style.display = "block";
+//   }
+//   else {
+//     vistaPrincipaInicio.style.display = "none";
+//     vistaPrincipaFinal.style.display = "none";
+//   }
+// }
+// function limpiar() {
+//   document.querySelector("#botonFinal").value;
+// }
+
+// botonlInicio.addEventListener("click", function () {
+//   cambiarDeVista("banner-two");
+// });
+// botonFinal.addEventListener("click", function () {
+//   limpiar();
+//   cambiarDeVista("banner-one");
+// });
