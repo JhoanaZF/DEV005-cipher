@@ -6,17 +6,15 @@ const cipher = {
     let mensajeEncode = "";
 
     for (let i = 0; i < mensaje.length; i++) {
-      const codigoLetra = mensaje.charCodeAt(i); //87 = W
-      const codigoLetraOffset = codigoLetra + offset; // 87 + 7 = 94
+      const codigoLetra = mensaje.charCodeAt(i);
+      const codigoLetraOffset = codigoLetra + offset;
 
       if (codigoLetraOffset >= 90) {
-        // SI 94 ES MAYOR DE 90 HASME LCODIGO
-        const codigoLetraAlgorotimo = ((codigoLetraOffset - 65) % 26) + 65; // (94 - 65)%26 +65 = 68
-        const letraEncode = String.fromCharCode(codigoLetraAlgorotimo); // 68 = D
+        const codigoLetraAlgorotimo = ((codigoLetraOffset - 65) % 26) + 65;
+        const letraEncode = String.fromCharCode(codigoLetraAlgorotimo);
         mensajeEncode += letraEncode;
       } else {
-        // si no es mayor de 90
-        const letraEncode = String.fromCharCode(codigoLetraOffset); // Letra
+        const letraEncode = String.fromCharCode(codigoLetraOffset);
         mensajeEncode += letraEncode;
       }
     }
@@ -28,19 +26,16 @@ const cipher = {
     }
     let mensajeDecode = "";
 
-    // console.log(mensaje, offset);
     for (let i = 0; i < mensaje.length; i++) {
-      const codigoLetra = mensaje.charCodeAt(i); //65 = A
-      const codigoLetraOffset = codigoLetra - offset; // 65-7 = 58
+      const codigoLetra = mensaje.charCodeAt(i);
+      const codigoLetraOffset = codigoLetra - offset;
 
       if (codigoLetraOffset <= 65) {
-        // SI 58 ES MENOR o igual DE 65 HASME ESTE CODIGO
-        const codigoLetraAlgorotimo = ((codigoLetraOffset + 65) % 26) + 65; // (58 + 65)%26 +65 = 84
-        const letraDecode = String.fromCharCode(codigoLetraAlgorotimo); // 84 = T
+        const codigoLetraAlgorotimo = ((codigoLetraOffset + 65) % 26) + 65;
+        const letraDecode = String.fromCharCode(codigoLetraAlgorotimo);
         mensajeDecode += letraDecode;
       } else {
-        // si es mayor de 65
-        const letraDecode = String.fromCharCode(codigoLetraOffset); // Letra
+        const letraDecode = String.fromCharCode(codigoLetraOffset);
         mensajeDecode += letraDecode;
       }
     }
