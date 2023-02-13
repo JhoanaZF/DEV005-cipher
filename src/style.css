@@ -68,6 +68,7 @@ h1 {
   font-size: 30px;
   font-weight: 400;
 }
+
 .boton {
   width: 80px;
   height: 30px;
@@ -75,6 +76,14 @@ h1 {
   cursor: pointer;
   color: #f2f2f2;
   background-color: #001746;
+  transition: 0.4s;
+}
+.boton:hover {
+  background-color: #ffc107;
+}
+
+.boton:focus {
+  outline: 0px;
 }
 /* verificar */
 /* .ocean {
