@@ -21,12 +21,7 @@
           <br />
           <p class="text-four">Ingrese Nº de desplazamientos</p>
           <form>
-            <input
-              class="desplazamiento"
-              type="number"
-              id="desplazamiento"
-              required
-            />
+            <input class="offset" type="number" id="offset" required />
           </form>
           <p class="text-four">Ingrese su mensaje a Cifrar o Descifrar</p>
           <textarea
@@ -54,16 +49,14 @@
             cols="30"
             rows="10"
             type="text"
-            required
+            disabled
           ></textarea>
           <br />
-          <button type="button" class="boton" id="botonFinal">Limpiar</button>
+          <button type="reset" class="boton" id="botonReiniciar">
+            Reiniciar
+          </button>
         </article>
       </section>
-      <!-- <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
-      </div> -->
     </main>
 
     <script src="index.js" type="module"></script>

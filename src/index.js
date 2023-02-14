@@ -1,46 +1,24 @@
 import cipher from "./cipher.js";
+const botonCifrar = document.querySelector("#cifrar");
+const botonDescifrar = document.querySelector("#descifrar");
+const botonReiniciar = document.querySelector("#botonReiniciar");
 
-// const botonInicio = document.querySelector("#botonInicio");
-// const botonFinal = document.querySelector("#botonFinal");
+botonCifrar.addEventListener("click", function () {
+  const offset = document.querySelector("#offset").value;
+  const mensajeI = document.querySelector("#mensajeI").value;
+  const mensajeEncode = cipher.encode(parseInt(offset), mensajeI);
+  document.querySelector("#mensajeF").value = mensajeEncode;
+});
 
-// const vistaPrincipaInicio = document.querySelector("#banner-one");
-// const vistaPrincipaFinal = document.querySelector("#banner-two");
+botonDescifrar.addEventListener("click", function () {
+  const offset = document.querySelector("#offset").value;
+  const mensajeI = document.querySelector("#mensajeI").value;
+  const mensajeDecode = cipher.decode(parseInt(offset), mensajeI);
+  document.querySelector("#mensajeF").value = mensajeDecode;
+});
 
-// function cambiarDeVista(vista) {
-//   if (vista === "banner-one") {
-//     vistaPrincipaInicio.style.display = "block";
-//     vistaPrincipaFinal.style.display = "none";
-//   }
-//   else if (vista === "banner-two") {
-//     vistaPrincipaInicio.style.display = "none";
-//     vistaPrincipaFinal.style.display = "block";
-//   }
-//   else {
-//     vistaPrincipaInicio.style.display = "none";
-//     vistaPrincipaFinal.style.display = "none";
-//   }
-// }
-// function limpiar() {
-//   document.querySelector("#botonFinal").value;
-// }
-
-// botonlInicio.addEventListener("click", function () {
-//   cambiarDeVista("banner-two");
-// });
-// botonFinal.addEventListener("click", function () {
-//   limpiar();
-//   cambiarDeVista("banner-one");
-// });
-
-// const nD = document.querySelector("#desplazamiento").value;
-// const mensajeI = document.querySelector("#mensajeI");
-// const mensajeF = document.querySelector("#mensajeF");
-// nD.addEventListener("click", function (e) {
-//   console.log("ingrese un mumero");
-// });
-
-// mensajeI.addEventListener("blur", function (e) {
-//   console.log(e.target.value);
-// });
-
-cipher.encode(33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+botonReiniciar.addEventListener("click", function () {
+  document.querySelector("#offset").value = "";
+  document.querySelector("#mensajeI").value = "";
+  document.querySelector("#mensajeF").value = "";
+});
