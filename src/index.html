@@ -19,21 +19,22 @@
           <p class="text-two">A Cifrado Cesar</p>
           <h2 class="text-three">Cifra y Descifra tus mensajes</h2>
           <br />
-          <p class="text-four">Ingrese Nº de desplazamientos</p>
+          <p class="text-four">Ingrese su Nº de desplazamientos</p>
           <form>
             <input class="offset" type="number" id="offset" required />
           </form>
           <p class="text-four">Ingrese su mensaje a Cifrar o Descifrar</p>
+
           <textarea
             class="mensaje"
             placeholder="Ingrese su mensaje..."
             id="mensajeI"
-            cols="30"
+            cols="40"
             rows="10"
             type="text"
             required
           ></textarea>
-          <br />
+
           <div class="botonesCD">
             <button type="button" class="boton" id="cifrar">Cifrar</button>
             <button type="button" class="boton" id="descifrar">
@@ -41,17 +42,15 @@
             </button>
           </div>
 
-          <br />
           <textarea
             class="mensaje"
             placeholder="Su mensaje..."
             id="mensajeF"
-            cols="30"
+            cols="40"
             rows="10"
             type="text"
             disabled
           ></textarea>
-          <br />
           <button type="reset" class="boton" id="botonReiniciar">
             Reiniciar
           </button>

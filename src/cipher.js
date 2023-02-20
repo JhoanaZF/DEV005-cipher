@@ -43,9 +43,7 @@ const cipher = {
         const letraDecode = String.fromCharCode(codigoLetraAlgorotimo);
         mensajeDecode += letraDecode;
       } else if (esMinuscula) {
-        const codigoLetraAlgorotimo =
-          ((codigoLetraOffset + 97) % 26) +
-          97; /*averiguar esta parte, no pasa el test */
+        const codigoLetraAlgorotimo = ((codigoLetraOffset - 122) % 26) + 122;
         const letraDecode = String.fromCharCode(codigoLetraAlgorotimo);
         mensajeDecode += letraDecode;
       } else {
