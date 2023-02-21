@@ -4,9 +4,9 @@
 
 - [1. Resumen del proyecto](#1-resumen-del-proyecto)
 - [2. Tecnologias usadas](#2-tecnologias-usadas)
-- [3. Vistas](#4-vistas)
-- [4. Instrucciones](#5-instrucciones)
-- [5. Enlace Deploy](#6-enlace-deploy)
+- [3. Vistas](#3-vistas)
+- [4. Instrucciones](#4-instrucciones)
+- [5. Enlace Deploy](#5-enlace-deploy)
 
 ---
 
@@ -22,7 +22,7 @@ Esta página web, te permite codificar tus mensajes en base al cifrado César. P
 
 ## 3. Vistas
 
--Version desktop
+Version desktop
 ![caeser-cipher](cifrado.png)
 
 ## 4. Instrucciones
