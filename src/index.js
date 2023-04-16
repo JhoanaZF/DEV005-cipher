@@ -13,7 +13,7 @@ botonCifrar.addEventListener("click", function () {
 botonDescifrar.addEventListener("click", function () {
   const offset = document.querySelector("#offset").value;
   const mensajeI = document.querySelector("#mensajeI").value;
-  const mensajeDecode = cipher.decode(parseInt(offset), mensajeI);
+  const mensajeDecode = cipher.decode(parseInt(offset), mensajeI); //OBTENER EL MENSAJE DESCIFRADO
   document.querySelector("#mensajeF").value = mensajeDecode;
 });
 
